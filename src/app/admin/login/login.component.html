@@ -1,0 +1,49 @@
+<div class="bdy">
+  <div class="alert alert-success w-25 m-auto text-center" *ngIf="signsucc">
+    <strong>User Created Successfully!</strong>
+  </div>
+  <div class="alert alert-danger w-25 m-auto text-center" *ngIf="loginfailed">
+    <strong>Give Valid Username or Password</strong>
+  </div>
+  <div class="alert alert-warning w-50 m-auto text-center" *ngIf="signfailed">
+    <strong>Please Input Proper Username or Password</strong>
+  </div>
+
+  <div class="authenctication row">
+    <div class="login col-sm-6">
+      <h1>Login</h1>
+<form [formGroup]="myReactiveForm">
+      <div class="input-field">
+        <input id="loginuser" type="text" class="validate" #loginuser (click)="setfalse()" formControlName="username">
+        <label for="loginuser">Username</label>
+      </div>
+      <div class="input-field">
+        <input id="loginpassword" type="password" class="validate" #loginpass formControlName="password">
+        <label for="loginpassword">Password</label>
+      </div>
+      <button class="btn btn-success" type="submit" name="action" (click)="login(loginuser,loginpass)">Login
+        <i class="material-icons left">lock_open</i>
+      </button>
+  </form>
+    </div>
+
+    <div class="signup col-sm-6">
+      <h1>Signup</h1>
+    <form [formGroup]="myReactiveForm">
+      <div class="input-field">
+        <input id="signuser" type="text" class="validate" #signuser (click)="setsign()" formControlName="username">
+        <label for="signuser">Username</label>
+      </div>
+      <div class="input-field">
+        <input id="signpassword" type="password" class="validate" #signpass formControlName="password">
+        <label for="signpassword">Password</label>
+      </div>
+      <button class="btn btn-primary" type="submit" name="action" (click)="signup(signuser,signpass)">Sign Up
+        <i class="material-icons left">person_add</i>
+      </button>
+    </form>
+    </div>
+    <p class="mssg text-success">If You are a New User, Please Sign Up first</p>
+  </div>
+
+</div>

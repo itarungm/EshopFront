@@ -1,0 +1,71 @@
+.bdy{
+  padding-top: 0;
+  background-image: url("../../../assets/images/login/blue.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+
+}
+
+.login{
+  width: 398px;
+  background-image:url("../../../assets/images/login/polygon.gif");
+  background-color: rgba(147, 98, 211, 0.2);
+  background-blend-mode: overlay;
+  margin-bottom: 5px;
+}
+.signup{
+  background-image:url("../../../assets/images/login/polygon.gif");
+  background-color: rgba(253, 84, 163, 0.2);
+  background-blend-mode: overlay;
+  width: 398px;
+  margin-bottom: 5px;
+
+}
+
+#loginuser{
+  width: 300px;
+  color: white;
+}
+#loginpassword{
+  width: 300px;
+  color: white;
+
+}
+#signuser{
+  width: 300px;
+  color: white;
+
+}
+#signpassword{
+  color: white;
+
+  width: 300px;
+}
+
+.login,.signup h1{
+  color: white;
+
+}
+.authenctication{
+  position: relative;
+  bottom: -210px;
+  width: 800px;
+  margin: auto;
+  box-shadow:0px 0px 30px 2px rgba(255, 255, 255,0.3);
+}
+
+.btn{
+  position:relative;
+    left:30%;
+
+
+}
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+  box-shadow: 0 0 13px inset rgba(0,0,0,0.2);
+}
